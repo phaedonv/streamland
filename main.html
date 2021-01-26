@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- CSS  -->
+        <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+        <!-- HTML -->
+
+    <body>
+        <div id="main">
+            <div class="container title" id="titles">
+                Free live-streaming service
+            </div>
+
+            <div class="container" id="frame">
+                <img id="tv-frame" src="images/modern2.png" alt="tv frame" width="650" height="450">
+                <video id='hls-example'  class="video-js vjs-default-skin vjs-big-play-centered" width="600" height="400" controls>
+                <source type="application/x-mpegURL" src="https://liveopen.siliconweb.com/openTvLive/OpenLive2/chunklist.m3u8">
+                </video>
+            </div>
+
+            <div class="footer" id="titles">
+                no copyright! 2021
+            </div>
+         
+        </div> 
+        
+    </body>
+
+
+        <!-- JS code -->
+        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+        <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+        <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+        <script>
+        var player = videojs('hls-example');
+        player.play();
+        </script>
+
+    
+
+
+</html>
