@@ -2,7 +2,7 @@
 
 <h1>📺 OPEN live streaming TV 📺</h1>
 <p>
-  Just a place where you can watch OPEN TV live streaming without geoblockation. Click
+  Just a place where you can watch OPEN TV live streaming without geo-blocking.. Click
   <a href="https://phaedonv.github.io/open_live/" target="_blank">here</a> if you want to visit the project;)
 </p>
 
