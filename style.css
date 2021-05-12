@@ -33,7 +33,7 @@ html {
     width: 695px;
 }
 
-#titles {
+#titles, #footer {
     text-align: center;
     line-height: 1.6;
     font-size: 33px;
@@ -52,8 +52,9 @@ html {
         0 0 150px #0ff;
 }
 
-.footer {
+#footer {
     margin-top: 142px !important;
+    font-size: 24px !important;
 }
 
 /*open animation*/
@@ -137,13 +138,13 @@ html {
 }
 
 .clock {
-  padding: 0 4vw;
+  padding: 0 3vw;
 }
 
 #clocks {
   text-align: center;
   line-height: 1.6;
-  font-size: 24px;
+  font-size: 18px;
   text-transform: uppercase;
   margin: 64px;
 
@@ -157,4 +158,9 @@ html {
       0 0 90px rgba(222, 129, 255, 0.6),
       0 0 100px rgba(222, 129, 255, 0.6),
       0 0 150px rgba(222, 129, 255, 0.6);
+}
+
+
+.fb-share-button {
+  padding-bottom: 3vh;
 }
