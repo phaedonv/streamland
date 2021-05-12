@@ -162,5 +162,23 @@ html {
 
 
 .fb-share-button {
-  padding-bottom: 3vh;
+  padding: 3vh 0 3vh;
+}
+
+#foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*menu with buttons*/
+#menu {
+  display: flex;
+  position: absolute;
+  bottom: -70px;
+}
+
+.btn {
+  padding: 4px;
+  margin: 2px;
 }
