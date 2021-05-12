@@ -33,7 +33,7 @@ html {
     width: 695px;
 }
 
-#titles {
+#titles, #local-clock {
     text-align: center;
     line-height: 1.6;
     font-size: 33px;
