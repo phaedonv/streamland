@@ -10,6 +10,6 @@
     You could also visit the onion hidden service, built with a raspberry pi zero and nginx, following 
     <a href="https://www.youtube.com/watch?v=bllS9tkCkaM" target="_blank">this</a> tutorial!
 <h4>
-  onion link: http://uzh54jk2fuy4ziaazlfh74wmd5ashpbxu3aaqtbzsrnlj7ei5wmhxtid.onion/</br>
+  onion link: <a href="http://uzh54jk2fuy4ziaazlfh74wmd5ashpbxu3aaqtbzsrnlj7ei5wmhxtid.onion" target="_blank" <style="text-decoration:none;color:#7D4698">🧅</a><br>
 </h4>
 <br>

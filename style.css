@@ -33,7 +33,7 @@ html {
     width: 695px;
 }
 
-#titles, #local-clock {
+#titles {
     text-align: center;
     line-height: 1.6;
     font-size: 33px;
@@ -128,4 +128,33 @@ html {
         text-shadow: none;
         box-shadow: none;
     }
+}
+
+/*clocks*/
+
+#clocks {
+  display: flex;
+}
+
+.clock {
+  padding: 0 4vw;
+}
+
+#clocks {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 64px;
+
+  color: #fff;
+  text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px rgba(222, 129, 255, 0.6),
+      0 0 80px rgba(222, 129, 255, 0.6),
+      0 0 90px rgba(222, 129, 255, 0.6),
+      0 0 100px rgba(222, 129, 255, 0.6),
+      0 0 150px rgba(222, 129, 255, 0.6);
 }
