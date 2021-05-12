@@ -36,15 +36,15 @@
 
             <div class="container" id="frame">
                 <img id="tv-frame" src="images/modern2.png" alt="tv frame" width="650" height="450">
-                <video id='hls-example'  class="video-js vjs-default-skin vjs-big-play-centered" width="600" height="400" controls>
-                <source type="application/x-mpegURL" src="https://liveopen.siliconweb.com/openTvLive/OpenLive2/chunklist.m3u8">
+                <video id='hls-example' class="video-js vjs-default-skin vjs-big-play-centered" width="600" height="400" controls>
+                <source id="telly" type="application/x-mpegURL" src="https://liveopen.siliconweb.com/openTvLive/OpenLive2/chunklist.m3u8">
                 </video>
             </div>
 
             <div id="menu">
-                <button class="btn">open-tv</button>
-                <button class="btn">ertflix</button>
-                <button class="btn">coming soon</button>
+                <button onclick="fun1();" class="btn">open-tv</button>
+                <button onclick="fun2();" class="btn">ertflix</button>
+                <button onclick="fun3();" class="btn">coming soon</button>
             </div>
 
         </div>

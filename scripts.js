@@ -12,7 +12,7 @@
   
   }());
 
-  ////////////////
+  //local-clock + 1 hour (have to fix it somehow to UTC+03:00)
 
   (function () {
 
@@ -32,3 +32,17 @@
     }, 1000);
   
   }());
+
+//buttons
+function fun1() {
+    document.getElementById("frame").src = "https://liveopen.siliconweb.com/openTvLive/OpenLive2/chunklist.m3u8"; //open
+    alert("here should be open!");
+} 
+
+function fun2() {
+    document.getElementById("frame").src = "https://ert-live-bcbs15228.siliconweb.com/media/ert_1_ww/ert_1_wwmedium.m3u8"; //ertflix
+} 
+
+function fun3() {
+    document.getElementById("hls-example").src = "https://www.youtube.com/embed/sbPPORGpMfI"; //random live from youtube
+} 
