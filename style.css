@@ -187,3 +187,7 @@ html {
   padding: 4px;
   margin: 2px;
 }
+
+.vjs-poster {
+  background-size: cover !important;
+}
