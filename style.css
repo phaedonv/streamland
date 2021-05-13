@@ -20,7 +20,7 @@ html {
     position:relative;
 }
 
-#hls-example {
+#my-video {
     display: flex;
     position: relative !important;
     box-shadow:0 5px 80px rgba(222, 129, 255, 0.4), 0 0 20px rgba(94, 179, 255, 0.5) inset
@@ -79,6 +79,12 @@ html {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    body {
+      /*code goes here*/
+    }
   }
 
   #open {
