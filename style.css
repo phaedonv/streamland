@@ -179,13 +179,16 @@ html {
 /*menu with buttons*/
 #menu {
   display: flex;
-  position: absolute;
-  bottom: -70px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 12px;
 }
 
 .btn {
   padding: 4px;
   margin: 2px;
+  z-index: 2;
 }
 
 .vjs-poster {
