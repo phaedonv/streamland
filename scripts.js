@@ -1,4 +1,4 @@
-(function () {
+/*(function () {
 
     var localClock = document.getElementById( "local-clock" );
   
@@ -17,7 +17,7 @@
   (function () {
 
     Date.prototype.grHours = function(h){
-        this.setHours(this.getHours()-h);
+        this.setHours(this.getHours()+h);
         return this;
     }
 
@@ -32,5 +32,30 @@
     }, 1000);
   
   }());
+
+*/
+//testing code
+
+const locations = document.querySelectorAll('section.times div')
+
+const updateTimes = function () {
+    locations.forEach(location => {
+        const output = location.querySelector("output")
+
+        const timezone = location.getAttribute("data-timezone")
+    
+        const now = luxon.DateTime.now().setZone(timezone)
+    
+        output.innerHTML = now.toFormat("HH:mm:ss")
+    })
+}
+
+updateTimes()
+
+setInterval(function () {
+    updateTimes()
+}, 1000)
+
+
 
 
