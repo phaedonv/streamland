@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>star live streaming</title>
+        
+        <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+  
+        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+        <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+   
+        <link rel="stylesheet" href="style.css">
+
+        <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fvectors%2Fnow-open-neon-signs-vector-now-open-design-template-neon-sign-light-vector-id980929818%3Fk%3D6%26m%3D980929818%26s%3D170667a%26w%3D0%26h%3DQPKwmAMYHAiKAI6CON4qjpLCJ5xs0Rz0Lqu4vpKDGxs%3D&f=1&nofb=1">
+        <meta property='og:title' content='OPEN Source Live-streaming'/>
+        <meta property='og:description' content='Simple web-streaming service'/>
+        <meta property='og:url' content='https://phaedonv.github.io/open_live/'/>
+        <!-- CSS  -->
+        <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+    <!--pie menu-->
+    <div class="pie pie1" onclick="document.body.classList.remove('active')">
+        <div class="pie-color pie-color1">
+            <a href="ert1.html">
+                <img class="ert" src="images/ert1.svg.png">
+            </a>
+        </div>
+      </div>
+      <div class="pie pie2" onclick="document.body.classList.remove('active')">
+        <div class="pie-color pie-color2">
+            <a href="open.html">
+                <img class="open" src="images/Open_Beyond_TV_Transparent.png">
+            </a>
+        </div>
+      </div>
+      <div class="pie pie3" onclick="document.body.classList.remove('active')">
+        <div class="pie-color pie-color3">
+            <a href="star.html">
+                <img class="star" src="images/Star_Channel_2003.png">
+            </a>
+        </div>
+      </div>
+      <div class="menu" onclick="document.body.classList.toggle('active')">
+        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+              <g
+                fill="none"
+                stroke="#000"
+                stroke-width="7.999"
+                stroke-linecap="round"
+              >
+                <path d="M 55,26.000284 L 24.056276,25.999716" />
+                <path d="M 24.056276,49.999716 L 75.943724,50.000284" />
+                <path d="M 45,73.999716 L 75.943724,74.000284" />
+                <path d="M 75.943724,26.000284 L 45,25.999716" />
+                <path d="M 24.056276,73.999716 L 55,74.000284" />
+              </g>
+            </svg>
+      </div>
+
+    <body>
+      <!-- FB share -->
+      <div id="fb-root"></div>
+      
+
+        <div id="banner">
+            <p id="open" contenteditable spellcheck="false">star-hd?</p>
+        </div>
+
+        <div id="main">
+            <div class="container title" id="titles">
+                open-source 
+                <br><br>
+                live-streaming service
+            </div>
+
+            <div class="container" id="frame">
+                <img id="tv-frame" src="images/modern2.png" alt="tv frame">
+                <video
+                    id="my-video"
+                    class="video-js vjs-theme-fantasy"
+                    controls
+                    preload="auto"
+                    width="940"
+                    height="564"
+                    poster="images/poltergeist.gif"
+                    data-setup="{}"
+                >
+                    <source type="application/x-mpegURL" src="https://livestar.siliconweb.com/media/star1/star1.m3u8">
+                    <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                        >supports HTML5 video</a
+                    >
+                    </p>
+                </video> 
+                
+            </div>
+
+        </div>
+
+        <div id="menu2">
+            <a class="btn" href="open.html"><button>open tv live streaming</button></a>
+            <a class="btn" href="ert1.html"><button>ert-1</button></a>
+        </div>
+
+        <div id="foot">
+            <div class="footer" id="footer">
+                made with love and code! 2021
+            </div>
+
+            <section class="times" id="clocks">
+                <div class="clock" id="local-clock">
+                    <h2>Your time is</h2>
+                    <output>00:00:00</output>                      
+                </div>
+
+                <div data-timezone="Europe/Athens" class="clock">
+                    <h2>Greece</h2>
+                    <output>00:00:00</output>
+                </div>
+            </section>
+            
+            <div class="fb-share-button" data-href="https://phaedonv.github.io/open_live/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+        </div>
+    </body>
+</html>
+
+<!--scripts-->
+<script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="oJxWyNdF"></script>
+<script src="scripts.js"></script>
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+

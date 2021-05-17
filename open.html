@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>open tv</title>
+        <title>open tv live streaming</title>
         
         <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
   
@@ -19,6 +19,45 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     </head>
+
+    <!--pie menu-->
+    <div class="pie pie1" onclick="document.body.classList.remove('active')">
+        <div class="pie-color pie-color1">
+            <a href="ert1.html">
+                <img class="ert" src="images/ert1.svg.png">
+            </a>
+        </div>
+      </div>
+      <div class="pie pie2" onclick="document.body.classList.remove('active')">
+        <div class="pie-color pie-color2">
+            <a href="open.html">
+                <img class="open" src="images/Open_Beyond_TV_Transparent.png">
+            </a>
+        </div>
+      </div>
+      <div class="pie pie3" onclick="document.body.classList.remove('active')">
+        <div class="pie-color pie-color3">
+            <a href="star.html">
+                <img class="star" src="images/Star_Channel_2003.png">
+            </a>
+        </div>
+      </div>
+      <div class="menu" onclick="document.body.classList.toggle('active')">
+        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+              <g
+                fill="none"
+                stroke="#000"
+                stroke-width="7.999"
+                stroke-linecap="round"
+              >
+                <path d="M 55,26.000284 L 24.056276,25.999716" />
+                <path d="M 24.056276,49.999716 L 75.943724,50.000284" />
+                <path d="M 45,73.999716 L 75.943724,74.000284" />
+                <path d="M 75.943724,26.000284 L 45,25.999716" />
+                <path d="M 24.056276,73.999716 L 55,74.000284" />
+              </g>
+            </svg>
+      </div>
 
     <body>
       <!-- FB share -->
@@ -60,7 +99,7 @@
             </div>
         </div>
 
-        <div id="menu">
+        <div id="menu2">
             <a class="btn" href="index.html"><button>home</button></a>
             <a class="btn" href="ert1.html"><button>ert-1</button></a>
         </div>
