@@ -214,3 +214,16 @@ html {
 .vjs-poster {
   background-size: cover !important;
 }
+
+.vjs-icon-placeholder:before {
+  color: #fff;
+  text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 60px #e50914e8,
+      0 0 100px #e50914d8,
+      0 0 110px #e50914da,
+      0 0 120px #e50914d0,
+      0 0 170px #e50914da;
+}

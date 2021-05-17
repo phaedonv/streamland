@@ -15,7 +15,7 @@
         <meta property='og:description' content='Simple web-streaming service'/>
         <meta property='og:url' content='https://phaedonv.github.io/open_live/'/>
         <!-- CSS  -->
-        
+        <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     </head>
@@ -40,7 +40,7 @@
                 <img id="tv-frame" src="images/modern2.png" alt="tv frame">
                 <video
                     id="my-video"
-                    class="video-js"
+                    class="video-js vjs-theme-fantasy"
                     controls
                     preload="auto"
                     width="940"
@@ -67,16 +67,20 @@
 
         <div id="foot">
             <div class="footer" id="footer">
-                made with love 4 expats! 2021
+                made with love and code! 2021
             </div>
 
-            <div id="clocks">
-                <div class="clock" id="local-clock">                   
+            <section class="times" id="clocks">
+                <div class="clock" id="local-clock">
+                    <h2>Your time is</h2>
+                    <output>00:00:00</output>                      
                 </div>
 
-                <div class="clock" id="greece-clock">                    
+                <div data-timezone="Europe/Athens" class="clock">
+                    <h2>Greece</h2>
+                    <output>00:00:00</output>
                 </div>
-            </div>
+            </section>
             
             <div class="fb-share-button" data-href="https://phaedonv.github.io/open_live/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
         </div>
@@ -84,6 +88,7 @@
 </html>
 
 <!--scripts-->
+<script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="oJxWyNdF"></script>
 <script src="scripts.js"></script>
 <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
