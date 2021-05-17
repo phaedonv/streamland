@@ -149,10 +149,11 @@ html {
 }
 
 .clock {
-  padding: 0 3vw;
+  padding: 3vw 3vw;
 }
 
 #clocks {
+  border: 3px solid rgba(222, 129, 255, 0.6);
   text-align: center;
   line-height: 1.6;
   font-size: 18px;
@@ -171,6 +172,9 @@ html {
       0 0 150px rgba(222, 129, 255, 0.6);
 }
 
+#clocks h2 {
+  font-size: 9px !important;
+}
 
 .fb-share-button {
   padding: 3vh 0 3vh;

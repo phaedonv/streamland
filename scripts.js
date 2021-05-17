@@ -35,7 +35,7 @@
 
 */
 //testing code
-
+//better to use luxon | much cleaner code ;)
 const locations = document.querySelectorAll('section.times div')
 
 const updateTimes = function () {
