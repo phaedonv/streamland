@@ -55,5 +55,3 @@ updateTimes()
 setInterval(function () {
     updateTimes()
 }, 1000)
-
-
