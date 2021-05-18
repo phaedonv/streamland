@@ -314,6 +314,7 @@ html {
   position: fixed;
   top: -100px;
   width: 200px;
+  z-index: 3;
 }
 .hamburger {
   cursor: pointer;
@@ -344,6 +345,8 @@ html {
 }
 .active .pie {
   transform: translateX(0) translateY(0);
+  position: fixed;
+  z-index: 2;
 }
 .active .hamburger path:nth-child(1) {
   transform: rotate(45deg);
