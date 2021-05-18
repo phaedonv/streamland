@@ -23,8 +23,33 @@ html {
 #my-video {
     display: flex;
     position: relative !important;
-    box-shadow:0 5px 80px rgba(222, 129, 255, 0.4), 0 0 20px rgba(94, 179, 255, 0.5) inset
+    /* box-shadow:0 5px 80px rgba(222, 129, 255, 0.4), 0 0 20px rgba(94, 179, 255, 0.5) inset */
+
+    -webkit-animation: tvflicker .2s infinite alternate; 
+		-moz-animation:    tvflicker .5s infinite alternate; 
+		-o-animation:      tvflicker .5s infinite alternate; 
+		animation:         tvflicker .5s infinite alternate;
 }
+/*---------------------------------testing area--flickering effect----------------------------------------*/
+
+  @-webkit-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(8, 209, 216, 0.4); }
+	  100% { box-shadow: 0 0 95px 0 rgba(8, 209, 216, 0.45); }
+	}
+	@-moz-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(8, 209, 216,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(8, 209, 216,0.6); }
+	}
+	@-o-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(8, 209, 216,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(8, 209, 216,0.6); }
+	}
+	@keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(8, 209, 216,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(8, 209, 216,0.6); }
+	}
+
+  /*------------------------------end of testing area--flickering effect---------------------------------*/
 
 #tv-frame {
     display: block;
@@ -144,15 +169,12 @@ html {
 
 /*clocks*/
 
-#clocks {
-  display: flex;
-}
-
 .clock {
   padding: 3vw 3vw;
 }
 
 #clocks {
+  /*
   border: 1px solid rgba(222, 129, 255, 0.6);
   border-radius: 5rem;
   box-shadow:
@@ -164,11 +186,17 @@ html {
       0 0 70px rgba(222, 129, 255, 0.6),
       0 0 80px rgba(222, 129, 255, 0.6),
       0 0 130px rgba(222, 129, 255, 0.6);
+  */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   text-align: center;
   line-height: 1.6;
   font-size: 18px;
   text-transform: uppercase;
-  margin: 64px;
+  margin-top: 57px;
 
   color: #fff;
   text-shadow:
@@ -363,3 +391,10 @@ html {
 .active .hamburger path:nth-child(5) {
   transform: rotate(-45deg);
 }
+
+/*facebook share button*/
+._89_ {
+  rgb(8 209 216 / 60%) !important;
+}
+
+/*black mirror crack effeect footer*/

@@ -9,6 +9,7 @@
         <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
    
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animations.css">
 
         <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fvectors%2Fnow-open-neon-signs-vector-now-open-design-template-neon-sign-light-vector-id980929818%3Fk%3D6%26m%3D980929818%26s%3D170667a%26w%3D0%26h%3DQPKwmAMYHAiKAI6CON4qjpLCJ5xs0Rz0Lqu4vpKDGxs%3D&f=1&nofb=1">
         <meta property='og:title' content='OPEN Source Live-streaming'/>
@@ -106,24 +107,28 @@
             <a class="btn" href="ert1.html"><button>ert-1</button></a>
         </div>
 
-        <div id="foot">
-            <div class="footer" id="footer">
+        <section class="times" id="clocks">
+            <div class="clock" id="local-clock">
+                <h2>Your time is</h2>
+                <output>00:00:00</output>                      
+            </div>
+
+            <div data-timezone="Europe/Athens" class="clock">
+                <h2>Greece</h2>
+                <output>00:00:00</output>
+            </div>
+        </section>
+
+        <div class='animatedParent' id="foot">
+            <div class='animated tada' id="footer">
                 made with love and code! 2021
             </div>
 
-            <section class="times" id="clocks">
-                <div class="clock" id="local-clock">
-                    <h2>Your time is</h2>
-                    <output>00:00:00</output>                      
-                </div>
-
-                <div data-timezone="Europe/Athens" class="clock">
-                    <h2>Greece</h2>
-                    <output>00:00:00</output>
-                </div>
-            </section>
-            
-            <div class="fb-share-button" data-href="https://phaedonv.github.io/open_live/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+            <div class="fb-share-button" data-href="https://phaedonv.github.io/open_live/" data-layout="button" data-size="large">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                    Share
+                </a>
+            </div>
         </div>
     </body>
 </html>
@@ -133,4 +138,7 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="oJxWyNdF"></script>
 <script src="scripts.js"></script>
 <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="css3-animate-it.js"></script>
 
