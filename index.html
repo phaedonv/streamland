@@ -81,26 +81,13 @@
 
             <div class="container" id="frame">
                 <img id="tv-frame" src="images/modern2.png" alt="tv frame">
-                <video
-                    id="my-video"
-                    class="video-js vjs-theme-fantasy"
-                    controls
-                    preload="auto"
-                    width="940"
-                    height="564"
-                    poster="images/poltergeist.gif"
-                    data-setup="{}"
-                >
-                    <source type="application/x-mpegURL" src="#">
-                    <p class="vjs-no-js">
-                    To view this video please enable JavaScript, and consider upgrading to a
-                    web browser that
-                    <a href="https://videojs.com/html5-video-support/" target="_blank"
-                        >supports HTML5 video</a
-                    >
-                    </p>
-                </video> 
-                
+                <div id="youtubevideo">
+                    <iframe width="940" height="564" 
+                    src="https://www.youtube.com/embed/pvomDfQmhWQ" title="youtube-intro" 
+                    frameborder="0" autoplay; clipboard-write; encrypted-media; picture-in-picture" 
+                    allowfullscreen>
+                    </iframe>  
+                </div>
             </div>
 
         </div>
@@ -172,6 +159,7 @@
 <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="oJxWyNdF"></script>
 <script src="scripts.js"></script>
+<script src="videojsyoutube.js"></script>
 <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
