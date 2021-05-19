@@ -55,3 +55,11 @@ updateTimes()
 setInterval(function () {
     updateTimes()
 }, 1000)
+
+//volume of background music
+var thorVol = document.getElementById("thor");
+thorVol.volume = 1;
+
+var kitVol = document.getElementById("kit");
+kitVol.volume = 0.5;
+

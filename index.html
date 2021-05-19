@@ -83,7 +83,7 @@
                 <img id="tv-frame" src="images/modern2.png" alt="tv frame">
                 <div id="youtubevideo">
                     <iframe width="940" height="564" 
-                    src="https://www.youtube.com/embed/pvomDfQmhWQ?autoplay=1" title="youtube-intro" 
+                    src="https://www.youtube.com/embed/VSFgDCtfS_8?autoplay=1" title="youtube-intro" 
                     frameborder="0" autoplay; clipboard-write; encrypted-media; picture-in-picture" 
                     allowfullscreen>
                     </iframe>  
@@ -105,7 +105,7 @@
                 <li><a href="star.html">star</a></li>
                 <li><a href="ert1.html">ert-1</a></li>
                 <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                <li><a onClick="history.go(-1);"><i class="fa fa-repeat" aria-hidden="true"></i></a></li>
+                <li><a onClick="history.go(-1);"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a></li>
               </ul>
             </div>
           </div>
@@ -153,6 +153,22 @@
             </div>
         </div>
     </body>
+
+    <!--
+    <audio id="thor" src="sounds/ThunderRain.mp3" type="audio/mp3" autoplay loop></audio>
+    -->
+
+    <!--nightride web RADIO-->
+    <audio id="kit" src="#" type="audio/x-m4a" autoplay></audio>
+
+    <audio id="kit-player" src="https://stream.nightride.fm/nightride.m4a" type="audio/x-m4a" autoplay></audio>
+    <div> 
+    <button onclick="document.getElementById('kit-player').play()">Play</button> 
+    <button onclick="document.getElementById('kit-player').pause()">Pause</button> 
+    <button onclick="document.getElementById('kit-player').volume += 0.1">Vol +</button> 
+    <button onclick="document.getElementById('kit-player').volume -= 0.1">Vol -</button> 
+    </div>
+    
 </html>
 
 <!--scripts-->
