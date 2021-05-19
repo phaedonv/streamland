@@ -25,7 +25,7 @@ html {
     position:relative;
 }
 
-#my-video {
+#my-video, #youtubevideo {
     display: flex;
     position: relative !important;
     /* box-shadow:0 5px 80px rgba(222, 129, 255, 0.4), 0 0 20px rgba(94, 179, 255, 0.5) inset */
