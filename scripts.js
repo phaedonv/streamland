@@ -56,10 +56,18 @@ setInterval(function () {
     updateTimes()
 }, 1000)
 
-//volume of background music
-var thorVol = document.getElementById("thor");
-thorVol.volume = 1;
 
-var kitVol = document.getElementById("kit");
-kitVol.volume = 0.5;
+//volume of background music
+var thorEffect = document.getElementById("thor");
+thorEffect.volume = 1;
+
+var kitRadio = document.getElementById("kit");
+kitRadio.volume = 0.5;
+
+//autoplay with javascript?
+window.onload = function() {
+  kitRadio.autoplay = true;
+  kitRadio.onload();
+}
+
 

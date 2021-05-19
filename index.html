@@ -82,9 +82,9 @@
             <div class="container" id="frame">
                 <img id="tv-frame" src="images/modern2.png" alt="tv frame">
                 <div id="youtubevideo">
-                    <iframe width="940" height="564" 
+                    <iframe id="test" width="940" height="564" 
                     src="https://www.youtube.com/embed/VSFgDCtfS_8?autoplay=1" title="youtube-intro" 
-                    frameborder="0" autoplay; clipboard-write; encrypted-media; picture-in-picture" 
+                    frameborder="0" autoplay; clipboard-write; encrypted-media; picture-in-picture 
                     allowfullscreen>
                     </iframe>  
                 </div>
@@ -158,15 +158,15 @@
     <audio id="thor" src="sounds/ThunderRain.mp3" type="audio/mp3" autoplay loop></audio>
     -->
 
-    <!--nightride web RADIO-->
-    <audio id="kit" src="#" type="audio/x-m4a" autoplay></audio>
+    <!--nightride web RADIO with player-->
 
-    <audio id="kit-player" src="https://stream.nightride.fm/nightride.m4a" type="audio/x-m4a" autoplay></audio>
-    <div> 
-    <button onclick="document.getElementById('kit-player').play()">Play</button> 
-    <button onclick="document.getElementById('kit-player').pause()">Pause</button> 
-    <button onclick="document.getElementById('kit-player').volume += 0.1">Vol +</button> 
-    <button onclick="document.getElementById('kit-player').volume -= 0.1">Vol -</button> 
+    <audio id="kit" src="https://stream.nightride.fm/nightride.m4a" type="audio/x-m4a" ></audio>
+
+    <div id="kit-player"> 
+        <button onclick="document.getElementById('kit').play()">Play</button> 
+        <button onclick="document.getElementById('kit').pause()">Pause</button> 
+        <button onclick="document.getElementById('kit').volume += 0.1">Vol +</button> 
+        <button onclick="document.getElementById('kit').volume -= 0.1">Vol -</button>
     </div>
     
 </html>
@@ -180,4 +180,22 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="css3-animate-it.js"></script>
+
+<script> //web-radio autoplay settings
+    var rad = document.getElementById("kit");
+    function enableAutoplay() { 
+    rad.autoplay = true;
+    rad.load();
+    }
+    enableAutoplay();
+</script>
+
+<script> //youtube video autoplay settings
+    var vid = document.getElementById("test");
+    function enableAutoplay() { 
+    vid.autoplay = true;
+    vid.load();
+    }
+    enableAutoplay();
+</script>
 
