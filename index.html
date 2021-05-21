@@ -4,6 +4,8 @@
         <title>Streamland</title>
         
         <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   
         <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
         <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
@@ -146,7 +148,7 @@
             </svg>
 ---------------------------------------------------------------------------------------------------------------------------------------------->
 
-            <div class="fb-share-button" data-href="https://phaedonv.github.io/open_live/" data-layout="button" data-size="large">
+            <div class="fb-share-button" data-href="https://phaedonv.github.io/streamland/" data-layout="button" data-size="large">
                 <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
                     Share
                 </a>
@@ -160,7 +162,13 @@
 
     <!--nightride web RADIO with player-->
 
-    <audio id="kit" src="https://stream.nightride.fm/nightride.m4a" type="audio/x-m4a" ></audio>
+    <audio id="kit" src="https://stream.nightride.fm/nightride.m4a" type="audio/x-m4a"></audio>
+
+    <!--another one play btn-->
+    <div id="cont">
+        <div class="box center play" id="the-button"></div>
+        <!--<div class="box pause"></div>--> 
+      </div>
 
     <div id="kit-player"> 
         <button onclick="document.getElementById('kit').play()">Play</button> 
@@ -178,7 +186,6 @@
 <script src="videojsyoutube.js"></script>
 <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="css3-animate-it.js"></script>
 
 <script> //web-radio autoplay settings
@@ -190,11 +197,3 @@
     enableAutoplay();
 </script>
 
-<script> //youtube video autoplay settings
-    var vid = document.getElementById("test");
-    function enableAutoplay() { 
-    vid.autoplay = true;
-    vid.load();
-    }
-    enableAutoplay();
-</script>
