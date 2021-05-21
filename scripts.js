@@ -58,16 +58,24 @@ setInterval(function () {
 
 
 //volume of background music
-var thorEffect = document.getElementById("thor");
-thorEffect.volume = 1;
 
 var kitRadio = document.getElementById("kit");
-kitRadio.volume = 0.5;
-
-//autoplay with javascript?
-window.onload = function() {
-  kitRadio.autoplay = true;
-  kitRadio.onload();
-}
+kitRadio.volume = 0.8;
 
 
+/*another one play btn*/
+const kit = document.getElementById("kit");
+const box = document.querySelector('.box');
+
+function togglePlay() {
+  return kit.paused ? kit.play() : kit.pause();
+};
+
+box.addEventListener('click', (e)=>{
+  e.target.classList.toggle('pause');
+  togglePlay();
+})
+
+kit.onplaying = function() {
+    box.classList.add('pause');
+};
