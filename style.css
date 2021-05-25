@@ -467,7 +467,7 @@ ul li a:hover {
 
 /*another one play btn ----------------------------with pretty css-----------------------------find old css at https://codepen.io/phaedonv/pen/WNpRarV------------------------------*/
 .center{
-	position: absolute;
+	position: relative;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -475,8 +475,8 @@ ul li a:hover {
 
 #cont {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 6vw;
+    height: 6vw;
     display: block;
     border: 3.3333333333px solid rgb(158, 224, 4);
     border-radius: 50%;
@@ -494,19 +494,19 @@ ul li a:hover {
     border-left: 25px solid rgb(201, 46, 111);
 }
 
-.pause{
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    transition: all 0.2s ease;
-    width: 25px;
-    height: 50px;
-    transform: translateX(-11.538462px);
-    top: 25px;
-    border-top: 0 solid transparent;
-    border-right: 8.3333333333px solid rgb(158, 224, 4);
-    border-bottom: 0 solid transparent;
-    border-left: 8.3333333333px solid rgb(158, 224, 4);
+.pause {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 42%;
+  height: 63%;
+  transform: translate(-52%, -31%);
+  top: 25px;
+  border-top: 0 solid transparent;
+  border-right: 8.3333333333px solid rgb(158, 224, 4);
+  border-bottom: 0 solid transparent;
+  border-left: 8.3333333333px solid rgb(158, 224, 4);
 }
 
 /*kit-player-one design*/
@@ -521,7 +521,7 @@ ul li a:hover {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     input[type='range'] {
       overflow: hidden;
-      width: 100px;
+      width: 6vw;
       -webkit-appearance: none;
       background-color: #C92E6F;
       margin-top: 1vh;
