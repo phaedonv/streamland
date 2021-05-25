@@ -1,7 +1,7 @@
 *{
   text-decoration: none;
 
-  -webkit-user-select: none; /* Safari */        
+  -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
@@ -30,9 +30,9 @@ html {
     position: relative !important;
     /* box-shadow:0 5px 80px rgba(222, 129, 255, 0.4), 0 0 20px rgba(94, 179, 255, 0.5) inset */
 
-    -webkit-animation: tvflicker .2s infinite alternate; 
-		-moz-animation:    tvflicker .5s infinite alternate; 
-		-o-animation:      tvflicker .5s infinite alternate; 
+    -webkit-animation: tvflicker .2s infinite alternate;
+		-moz-animation:    tvflicker .5s infinite alternate;
+		-o-animation:      tvflicker .5s infinite alternate;
 		animation:         tvflicker .5s infinite alternate;
 }
 /*---------------------------------testing area--flickering effect----------------------------------------*/
@@ -65,7 +65,7 @@ html {
     left: -69px;
     height: 683px;
     width: 1084px;
-    z-index: 0; 
+    z-index: 0;
 }
 
 #titles, #footer {
@@ -97,12 +97,12 @@ html {
 :root {
     /* Base font size */
     font-size: 10px;
-  
+
     /* Set neon color */
     --neon-text-color: #f40;
     --neon-border-color: #08f;
   }
-  
+
   body {
     display: flex;
     flex-direction: column;
@@ -127,12 +127,12 @@ html {
     background-color: var(--neon-border-color);
     color: var(--neon-text-color);
   }
-  
+
   #open::selection {
     background-color: var(--neon-border-color);
     color: var(--neon-text-color);
   }
-  
+
   #open:focus {
     outline: none;
   }
@@ -421,7 +421,7 @@ ul li a {
   line-height: 60px;
   background: #171515;
   border-radius: 50%;
-  
+
   font-family: 'Anton', sans-serif;
   font-size: 21px;
   letter-spacing: 2px;
@@ -507,4 +507,56 @@ ul li a:hover {
     border-right: 8.3333333333px solid rgb(158, 224, 4);
     border-bottom: 0 solid transparent;
     border-left: 8.3333333333px solid rgb(158, 224, 4);
+}
+
+/*kit-player-one design*/
+#kit-player-one {
+  position: fixed;
+  top: 1vh;
+  right: 1vw;
+}
+
+/*input slider color change*/
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 100px;
+      -webkit-appearance: none;
+      background-color: #C92E6F;
+      margin-top: 1vh;
+
+      border-radius: 2vw;
+    }
+
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #9EE001;
+      margin-top: -1px;
+    }
+
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: black;
+      box-shadow: -80px 0 0 80px #9EE001;
+    }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #9EE001;
+}
+input[type="range"]::-moz-range-track {
+  background-color: #9a905d;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #9EE001;
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: #9a905d;
 }
