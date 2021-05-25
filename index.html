@@ -169,14 +169,20 @@
     <div id="cont">
         <div class="box center play" id="the-button"></div>
         <!--<div class="box pause"></div>--> 
-      </div>
+    </div>
 
+    <div>
+        <input type="range" id="volume-control" min="0" max="200" value="120" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)">
+    </div>
+
+    <!--
     <div id="kit-player"> 
         <button onclick="document.getElementById('kit').play()">Play</button> 
         <button onclick="document.getElementById('kit').pause()">Pause</button> 
         <button onclick="document.getElementById('kit').volume += 0.1">Vol +</button> 
         <button onclick="document.getElementById('kit').volume -= 0.1">Vol -</button>
     </div>
+    -->
     
 </html>
 

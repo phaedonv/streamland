@@ -60,7 +60,7 @@ setInterval(function () {
 //volume of background music
 
 var kitRadio = document.getElementById("kit");
-kitRadio.volume = 0.8;
+kitRadio.volume = 0.6;
 
 
 /*another one play btn*/
@@ -79,3 +79,12 @@ box.addEventListener('click', (e)=>{
 kit.onplaying = function() {
     box.classList.add('pause');
 };
+
+//volume control
+function SetVolume(val)
+    {
+        var player = document.getElementById('kit');
+        console.log('Before: ' + player.volume);
+        player.volume = val / 200;
+        console.log('After: ' + player.volume);
+    }
