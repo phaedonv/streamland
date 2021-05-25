@@ -1,15 +1,15 @@
 /*(function () {
 
     var localClock = document.getElementById( "local-clock" );
-  
+
     function updateClock ( clock ) {
       clock.innerHTML = new Date().toLocaleTimeString();
     }
-  
+
     setInterval(function () {
         updateClock( localClock );
     }, 1000);
-  
+
   }());
 
 //local-clock + 1 hour (have to fix it somehow to UTC+03:00)
@@ -22,15 +22,15 @@
     }
 
     var greekClock = document.getElementById( "greece-clock" );
-  
+
     function updateClock ( clock ) {
       clock.innerHTML = new Date().grHours(1).toLocaleTimeString();
     }
-  
+
     setInterval(function () {
         updateClock( greekClock );
     }, 1000);
-  
+
   }());
 
 */
@@ -43,9 +43,9 @@ const updateTimes = function () {
         const output = location.querySelector("output")
 
         const timezone = location.getAttribute("data-timezone")
-    
+
         const now = luxon.DateTime.now().setZone(timezone)
-    
+
         output.innerHTML = now.toFormat("HH:mm:ss")
     })
 }
@@ -81,10 +81,12 @@ kit.onplaying = function() {
 };
 
 //volume control
-function SetVolume(val)
-    {
-        var player = document.getElementById('kit');
-        console.log('Before: ' + player.volume);
-        player.volume = val / 200;
-        console.log('After: ' + player.volume);
-    }
+var video = document.getElementById('kit');
+var volumeControl = document.getElementById('vol-control');
+
+var setVolume = function(){
+    video.volume = this.value / 200;
+};
+
+volumeControl.addEventListener('change',setVolume);
+volumeControl.addEventListener('input',setVolume);
