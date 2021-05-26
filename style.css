@@ -521,7 +521,7 @@ ul li a:hover {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     input[type='range'] {
       overflow: hidden;
-      width: 64px;
+      width: 100px;
       -webkit-appearance: none;
       background-color: #C92E6F;
       margin-top: 1vh;
@@ -559,4 +559,20 @@ input[type="range"]::-ms-fill-lower {
 }
 input[type="range"]::-ms-fill-upper {
   background-color: #9a905d;
+}
+
+/*web-radio info*/
+#info {
+  margin-top: 0.5vh;
+}
+
+#info a{
+  font-size: 8px;
+  color: #9FDF03; 
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#info a:hover {
+  color: #C92E6F;
 }
